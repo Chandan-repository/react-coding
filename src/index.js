@@ -1,13 +1,11 @@
-import React, { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+function transformToObjects(numberArray) {
+  // Todo: Add your logic
+  // should return an array of objects
+  return numberArray.map((num) => {
+    let obj = { val: num };
 
-import App from './App';
+    return obj;
+  });
+}
 
-const rootElement = document.getElementById('root');
-const root = createRoot(rootElement);
-
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+transformToObjects([1, 2, 3]);
